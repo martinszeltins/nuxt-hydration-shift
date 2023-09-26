@@ -1,0 +1,5 @@
+@important {
+    .p-menu {
+        @apply shadow-md rounded-md;
+    }
+}

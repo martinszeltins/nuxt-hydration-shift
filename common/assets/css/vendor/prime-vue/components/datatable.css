@@ -1,0 +1,59 @@
+@important {
+    .p-datatable-wrapper {
+        @apply rounded-xl;
+
+        .p-datatable-table {
+            .p-datatable-thead {
+                .p-column-header-content {
+                    .p-checkbox {
+                        @apply cursor-default;
+                    }
+                }
+            }
+
+            .p-selection-column {
+                .p-checkbox {
+                    @apply cursor-default;
+                }
+            }
+        }
+
+        .p-column-header-content {
+            @apply py-1;
+        }
+        
+        .p-datatable {
+            .p-datatable-header {
+                @apply border-zinc-100 p-5;
+            }
+        }
+    
+        .p-datatable-footer {
+            @apply bg-zinc-50 text-zinc-700 border-zinc-100 py-3 px-6;
+        }
+    
+        .p-datatable-thead > tr > th {
+            @apply py-3 px-6 border-zinc-100 font-[500] text-white bg-secondary transition-none dark:bg-trout-900 dark:text-casper-300 dark:border-gray-700;
+        }
+    
+        .p-datatable-tfoot > tr > td {
+            @apply border-zinc-100 text-zinc-700 bg-zinc-50 dark:border-gray-700;
+        }
+    
+        .p-datatable-tbody > tr {
+            @apply text-zinc-700 transition-none dark:bg-gunmetal-1000 dark:text-casper-400 focus:outline-none;
+        }
+    
+        .p-datatable .p-datatable-tbody > tr > td {
+            @apply border-zinc-100 px-6;
+        }
+
+        .p-datatable-tbody > tr > td {
+            @apply dark:border-gray-600;
+        }
+    
+        .p-datatable-tbody > tr > td > .p-column-title {
+            @apply font-[500];
+        }
+    }
+}

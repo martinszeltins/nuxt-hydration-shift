@@ -1,0 +1,83 @@
+@important {
+    .p-button {
+        @apply py-3 text-base rounded-md outline-none enabled:focus:ring-0;
+
+        .p-button-label {
+            @apply transition-none;
+        }
+    }
+
+    .p-button-primary {
+        @apply bg-secondary border-secondary text-white enabled:hover:bg-secondary-650 enabled:hover:border-secondary-600 
+         enabled:hover:active:bg-secondary-700;
+
+         &.p-border-positive {
+            @apply enabled:hover:border-positive;
+         }
+
+        &.p-button-positive {
+            @apply bg-positive border-positive enabled:hover:bg-emerald-600 enabled:hover:border-emerald-600 enabled:hover:active:bg-emerald-600/90;
+        }
+    
+        &.p-button-negative {
+            @apply bg-negative border-negative enabled:hover:bg-red-600 enabled:hover:border-red-600 enabled:hover:active:bg-red-600/90;
+        }
+    
+        &.p-button-warning {
+            @apply bg-warning border-warning enabled:hover:bg-amber-600 enabled:hover:border-amber-600 enabled:hover:active:bg-amber-600/90;
+        }
+    
+        &.p-button-info {
+            @apply bg-info border-info enabled:hover:bg-blue-600 enabled:hover:border-blue-600 enabled:hover:active:bg-blue-600/90;
+        }
+    }
+
+    .p-button-secondary {
+        @apply border border-gray-300 bg-white px-3 py-2 font-medium text-primary shadow-sm 
+                    enabled:hover:bg-neutral-50 enabled:hover:border-gray-300
+                    enabled:active:hover:bg-neutral-100 enabled:focus:bg-white
+                    enabled:focus:hover:bg-neutral-50;
+
+        &.p-highlight {
+            @apply bg-secondary text-white;
+        }
+    }
+
+    .p-button-text {
+        @apply bg-transparent border-transparent text-zinc-500
+            enabled:hover:bg-neutral-50 enabled:hover:border-neutral-50 enabled:active:hover:bg-neutral-100
+            enabled:focus:bg-transparent enabled:focus:hover:bg-neutral-50;
+        
+            &.p-button-positive {
+                @apply text-positive enabled:hover:text-emerald-600 enabled:hover:active:text-emerald-600/90;
+            }
+        
+            &.p-button-negative {
+                @apply text-negative enabled:hover:text-red-600 enabled:hover:active:text-red-600/90;
+            }
+        
+            &.p-button-warning {
+                @apply text-warning enabled:hover:text-amber-600 enabled:hover:active:text-amber-600/90;
+            }
+        
+            &.p-button-info {
+                @apply text-info enabled:hover:text-blue-600 enabled:hover:active:text-blue-600/90;
+            }
+    }
+
+    .p-button-compact {
+        @apply flex justify-center gap-[6px];
+
+        .p-button-icon {
+            @apply flex-initial;
+        }
+
+        .p-button-label {
+            @apply flex-initial;
+        }
+    }
+
+    .p-button-rounded {
+        @apply rounded-full aspect-square p-0;
+    }
+}

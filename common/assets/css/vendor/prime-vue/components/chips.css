@@ -1,0 +1,11 @@
+@important {
+    .p-chips {
+        &:not(.p-disabled) {
+            &.p-focus {
+                .p-chips-multiple-container {
+                     @apply shadow-none ring-1 ring-secondary;
+                }
+            }
+        }
+    }
+}

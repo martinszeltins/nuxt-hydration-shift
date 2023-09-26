@@ -1,0 +1,15 @@
+@important {
+    .p-divider {
+        &.p-divider-horizontal:before {
+            @apply border-t-gray-100;
+        }
+
+        &.p-divider-vertical:before {
+            @apply border-t-gray-100;
+        }
+
+        &.p-divider-dark:before {
+            @apply border-t-gray-200;
+        }
+    }
+}

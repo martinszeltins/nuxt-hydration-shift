@@ -1,0 +1,25 @@
+@important {
+    .p-badge {
+        @apply absolute bg-secondary text-xs font-medium rounded-full px-1 min-w-[1rem] h-4 z-10;
+
+        &.p-badge-secondary {
+            @apply bg-slate-500;
+        }
+
+        &.p-badge-success {
+            @apply bg-positive;
+        }
+
+        &.p-badge-info {
+            @apply bg-blue-500;
+        }
+
+        &.p-badge-warning {
+            @apply bg-warning text-white;
+        }
+
+        &.p-badge-danger {
+            @apply bg-negative;
+        }
+    }
+}

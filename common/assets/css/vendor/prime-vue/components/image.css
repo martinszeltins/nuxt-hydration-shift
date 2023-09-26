@@ -1,0 +1,21 @@
+@important {
+    .p-image-preview-indicator {
+        @apply rounded-md bg-primary/20 text-white;
+    }
+
+    .p-image-toolbar {
+        @apply bg-[#0000005c] rounded-full backdrop-blur py-2 px-6 top-[13px];
+    }
+
+    .p-image-mask {
+        @apply bg-neutral-900/60;
+
+        .p-image-toolbar {
+            @apply mr-4;
+
+            .p-image-action {
+                @apply focus:shadow-none active:bg-gray-100/20;
+            }
+        }
+    }
+}

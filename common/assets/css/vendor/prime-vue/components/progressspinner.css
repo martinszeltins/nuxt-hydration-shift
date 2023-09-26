@@ -1,0 +1,5 @@
+@important {
+    .p-progress-spinner {
+        @apply grayscale opacity-40;
+    }
+}

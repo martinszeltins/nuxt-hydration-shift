@@ -1,0 +1,71 @@
+@important {
+    .p-message {
+        @apply rounded-md border border-l-[6px];
+
+        .p-message-wrapper {
+            @apply py-5 px-7 bg-white border-none rounded-md;
+        }
+
+        .p-message-close {
+            @apply transition-none focus:shadow-none;
+        }
+
+        &.p-message-info {
+            @apply border-info text-info;
+
+            .p-message-icon, .p-message-close {
+                @apply text-info;
+            }
+
+            .p-message-close {
+                @apply hover:bg-blue-100;
+            }
+        }
+
+        &.p-message-success {
+            @apply border-positive text-positive;
+
+            .p-message-icon, .p-message-close {
+                @apply text-positive;
+            }
+
+            .p-message-close {
+                @apply hover:bg-emerald-100;
+            }
+        }
+
+        &.p-message-warn {
+            @apply border-warning text-warning;
+
+            .p-message-icon, .p-message-close {
+                @apply text-warning;
+            }
+
+            .p-message-close {
+                @apply hover:bg-amber-100;
+            }
+        }
+
+        &.p-message-error {
+            @apply border-negative text-negative;
+
+            .p-message-icon, .p-message-close {
+                @apply text-negative;
+            }
+
+            .p-message-close {
+                @apply hover:bg-red-100;
+            }
+        }
+
+        &.p-message-condense {
+            .p-message-wrapper {
+                @apply p-3;
+
+                .p-message-text {
+                    @apply text-sm;
+                }
+            }
+        }
+    }
+}

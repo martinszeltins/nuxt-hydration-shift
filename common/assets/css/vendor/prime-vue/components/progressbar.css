@@ -1,0 +1,9 @@
+@important {
+    .p-progressbar {
+        @apply bg-gray-200 rounded-md;
+
+        .p-progressbar-value {
+            @apply bg-gray-200;
+        }
+    }
+}

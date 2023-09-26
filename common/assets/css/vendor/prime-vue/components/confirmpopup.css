@@ -1,0 +1,15 @@
+@important {
+    .p-confirm-popup {
+        @apply shadow-md rounded-md before:border-b-gray-200/50 border-t-[2px] border-t-[#f4f4f4c9] border-solid;
+
+        .p-button {
+            &.p-button-sm {
+                @apply px-8;
+            }
+
+            &.p-confirm-popup-accept {
+                @apply bg-secondary border-secondary text-white enabled:hover:bg-secondary-600 enabled:hover:border-secondary-600 enabled:hover:active:bg-secondary-600 dark:enabled:hover:bg-shark-800 dark:enabled:hover:border-shark-800;
+            }
+        }
+    }
+}

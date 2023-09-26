@@ -1,0 +1,5 @@
+@important {
+    select {
+        @apply focus:ring-secondary-500 focus:border-secondary-500;
+    }
+}

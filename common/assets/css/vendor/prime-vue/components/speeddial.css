@@ -1,0 +1,11 @@
+@important {
+    .p-speeddial-list {
+        .p-speeddial-item {
+            @apply duration-200;
+
+            .p-speeddial-action {
+                @apply bg-primary-700 hover:bg-primary-800 text-white;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+:root {
+    --maskbg: rgb(0 0 0 / 2%);
+}
+
+@important {
+    .p-error {
+        @apply text-negative;
+    }
+
+    .p-text-secondary {
+        @apply text-secondary;
+    }
+
+    .overflow-overlay.p-overflow-hidden {
+        @apply overflow-hidden;
+    }
+}

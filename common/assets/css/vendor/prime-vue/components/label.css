@@ -1,0 +1,5 @@
+@important {
+    label {
+        @apply block uppercase text-xs text-primary-500 font-medium;
+    }
+}

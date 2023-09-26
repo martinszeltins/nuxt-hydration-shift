@@ -1,0 +1,35 @@
+@important {
+    .p-inputswitch {
+        .p-inputswitch-slider {
+            @apply bg-zinc-300 transition-none;
+        }
+
+        &.p-focus {
+            .p-inputswitch-slider {
+                @apply shadow-[0_0_0_1px_#b39d6b];
+            }
+        }
+
+        &:not(.p-disabled):hover {
+            .p-inputswitch-slider {
+                @apply bg-neutral-300;
+            }
+        }
+
+        &.p-inputswitch-checked {
+            .p-inputswitch-slider {
+                @apply bg-secondary-600;
+            }
+
+            &:not(.p-disabled):hover {
+                .p-inputswitch-slider {
+                    @apply bg-secondary-700;
+                }
+            }
+        }
+
+        &.p-invalid {
+            @apply border-red-300;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+@import './utilities/tailwind.css';
+
+@import './base/base.css';
+@import './base/fonts.css';
+
+/* Vendor */
+@import 'primevue/resources/themes/saga-blue/theme.css';
+@import './vendor/prime-vue/theme.css';

@@ -1,0 +1,9 @@
+@important {
+    .p-link {
+        @apply text-secondary rounded-[0.375rem] font-[Inter] text-sm;
+    }
+
+    .p-link:focus {
+        @apply shadow-[0_0_0_1px_white] shadow-indigo-500;
+    }
+}

@@ -1,0 +1,17 @@
+@important {
+    .p-sidebar {
+        @apply text-zinc-700 shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.04)] dark:bg-trout-900 dark:text-casper-400;
+    }
+
+    .p-sidebar-header {
+        @apply justify-between p-5;
+
+        .p-sidebar-close, .p-sidebar-icon {
+            @apply text-zinc-500 transition-none focus:shadow-none;
+        }
+    }
+
+    .p-sidebar-content {
+        @apply p-5;
+    }
+}

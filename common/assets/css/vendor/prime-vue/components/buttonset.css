@@ -1,0 +1,15 @@
+@important {
+    .p-buttonset {
+        .p-button {
+            @apply rounded-none;
+        }
+
+        .p-button:first-of-type {
+            @apply rounded-l-md;
+        }
+
+        .p-button:last-of-type {
+            @apply rounded-r-md;
+        }
+    }
+}

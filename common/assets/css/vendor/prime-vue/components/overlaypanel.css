@@ -1,0 +1,13 @@
+@important {
+    .p-overlaypanel {
+        @apply text-zinc-700 rounded-md border border-solid border-zinc-100 shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.04)];
+
+        .p-overlaypanel-content {
+            @apply p-5;
+        }
+
+        .p-overlaypanel-close {
+            @apply bg-secondary-600 transition-none enabled:hover:bg-secondary-600;
+        }
+    }
+}

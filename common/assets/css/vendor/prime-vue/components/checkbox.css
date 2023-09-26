@@ -1,0 +1,37 @@
+@important {
+    .p-checkbox {
+        .p-checkbox-box {
+            @apply border-gray-400 text-zinc-700 rounded-md transition-none;
+
+            .p-checkbox-icon {
+                @apply text-[10px];
+            }
+
+            &.p-highlight {
+                @apply border-secondary-500 bg-secondary-500;
+            }
+        }
+
+        &.p-checkbox-disabled {
+            @apply cursor-default;
+        }
+
+        &:not(.p-checkbox-disabled) {
+            .p-checkbox-box {
+                @apply hover:border-secondary-300;
+
+                &.p-focus {
+                    @apply shadow-none border-secondary-500 ring-0 outline-none;
+                }
+
+                &.p-highlight {
+                    @apply hover:border-secondary hover:bg-secondary;
+                }
+            }
+        }
+
+        &.p-invalid>.p-checkbox-box {
+            @apply border-red-300;
+        }
+    }
+}

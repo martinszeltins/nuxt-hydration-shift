@@ -1,0 +1,17 @@
+@important {
+    .p-card {
+        @apply border border-neutral-100 rounded-md shadow-sm;
+
+        .p-card-body {
+            @apply p-6;
+        }
+
+        .p-card-footer {
+            @apply pt-5;
+        }
+
+        .p-card-content {
+            @apply p-0;
+        }
+    }
+}

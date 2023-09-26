@@ -1,0 +1,97 @@
+@important {
+    .p-dropdown {
+        @apply items-center border-zinc-300 rounded-md transition-none dark:bg-trout-900 dark:border-ground-700 dark:text-casper-400 dark:hover:bg-trout-800 dark:hover:border-ground-600;
+
+        &:not(.p-disabled) {
+            @apply border-zinc-300 dark:border-ground-700;
+
+            &.p-focus {
+                @apply border-secondary shadow-none dark:border-ground-600;
+            }
+        }
+
+        &.p-dropdown-clearable {
+            .p-dropdown-label {
+                @apply pr-7;
+            }
+        }
+
+        .p-dropdown-label {
+            &.p-inputtext {
+                @apply dark:bg-trout-900 dark:hover:bg-trout-800;
+                
+                &:focus {
+                    @apply ring-0;
+                }
+            }
+
+            &.p-placeholder {
+                @apply text-zinc-500 dark:text-casper-300;
+            }
+        }
+
+        .p-dropdown-trigger {
+            @apply text-zinc-500 w-12 rounded-r-md dark:text-casper-500;
+        }
+
+        .p-dropdown-clear-icon {
+            @apply text-zinc-500 right-12 dark:text-casper-500;
+        }
+    }
+
+    .p-dropdown-panel {
+        @apply py-1 text-zinc-700 rounded-md shadow-[0_0_#0000,0_0_#0000,0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] dark:text-casper-500 dark:bg-gunmetal-900 dark:border dark:border-ground-800 dark:border-solid;
+
+        .p-dropdown-header {
+            @apply py-2 px-3 text-zinc-700 bg-zinc-50 rounded-t-md dark:text-casper-500;
+
+            .p-dropdown-filter {
+                @apply pr-7 mr-[-1.75rem];
+            }
+
+            .p-dropdown-filter-icon {
+                @apply right-3 text-zinc-500 dark:text-casper-500;
+            }
+        }
+
+        .p-dropdown-items {
+            @apply p-1;
+
+            .p-dropdown-item {
+                @apply text-zinc-700 transition-none rounded-md dark:text-casper-500;
+
+                &:not(.p-highlight) {
+                    &:not(.p-disabled) {
+                        &.p-focus {
+                            @apply text-zinc-900 bg-gray-200 dark:text-casper-500 dark:bg-gunmetal-800;
+                        }
+
+                        &:hover {
+                            @apply text-zinc-900 bg-primary-50 dark:text-casper-500 dark:bg-gunmetal-800;
+                        }
+                    }
+                }
+
+                &.p-highlight {
+                    @apply text-primary-900 bg-primary-50 dark:text-casper-500 dark:bg-gunmetal-800;
+
+                    &.p-focus {
+                        @apply bg-primary-100 dark:bg-gunmetal-800;
+                    }
+                }
+            }
+
+            .p-dropdown-item-group {
+                @apply text-zinc-700 dark:text-casper-500;
+            }
+
+            .p-dropdown-empty-message {
+                @apply py-3 text-zinc-700 dark:text-casper-500;
+            }
+        }
+    }
+
+    .p-dropdown:hover .p-dropdown-label.p-inputtext {
+        @apply dark:bg-trout-800;
+    }
+}

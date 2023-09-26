@@ -1,0 +1,22 @@
+* {
+    user-select: none;
+}
+
+body {
+    @apply bg-gray-100 text-base;
+}
+
+/* Cursor Reset */
+@important {
+    .reset-cursor {
+        .p-button,
+        .p-button *,
+        .p-dropdown,
+        .p-dropdown *,
+        .p-dropdown-panel,
+        .p-dropdown-panel *,
+        .app-sidebar * {
+            cursor: default;
+        }
+    }
+}

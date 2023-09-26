@@ -1,0 +1,85 @@
+@important {
+    .p-autocomplete {
+        .p-autocomplete-loader {
+            @apply right-3;
+        }
+
+        &.p-autocomplete-dd {
+            .p-autocomplete-loader {
+                @apply right-[3.75rem];
+            }
+        }
+
+        &.p-disabled {
+            input {
+                @apply bg-neutral-100;
+            }
+        }
+
+        &:not(.p-disabled) {
+            &:hover {
+                .p-autocomplete-multiple-container {
+                    @apply border-zinc-300;
+                }
+            }
+
+            &.p-focus {
+                .p-autocomplete-multiple-container {
+                    @apply border-secondary-600 shadow-[0_0_0_1px_#b39d6b]; 
+                }
+            }
+        }
+
+        .p-autocomplete-multiple-container {
+            @apply py-1.5 px-3 gap-2;
+
+            .p-autocomplete-input-token {
+                @apply py-1.5;
+
+                input {
+                    @apply font-[Inter] text-zinc-700;
+                }
+            }
+
+            .p-autocomplete-token {
+                @apply py-1.5 px-3 bg-gray-200 text-zinc-700;
+
+                &.p-focus {
+                    @apply bg-zinc-300 text-zinc-700;
+                }
+            }
+        }
+    }
+
+    .p-autocomplete-panel {
+        @apply text-zinc-700 rounded-md shadow-[0_0_#0000,0_0_#0000,0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)];
+
+        .p-autocomplete-items {
+            @apply p-1;
+
+            .p-autocomplete-item {
+                @apply py-2 text-zinc-700 transition-none rounded-md;
+
+                &.p-highlight {
+                    @apply text-secondary bg-secondary-50;
+
+                    &.p-focus {
+                        @apply bg-secondary-100;
+                    }
+                }
+
+                &:not(.p-highlight):not(.p-disabled).p-focus {
+                    @apply text-zinc-900 bg-gray-200;
+                }
+
+                &:not(.p-highlight):not(.p-disabled):hover {
+                    @apply text-zinc-900 bg-zinc-100;
+                }
+            }
+
+            .p-autocomplete-item-group {
+                @apply text-zinc-700;
+            }
+        }
+    }
+}

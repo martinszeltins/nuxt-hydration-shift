@@ -1,0 +1,70 @@
+@important {
+    .p-toast {
+        .p-toast-message {
+            @apply rounded-md border border-l-[6px] shadow-[0_20px_25px_-5px_rgba(0,_0,_0,_0.1),0_10px_10px_-5px_rgba(0,0,0,0.04)];
+
+            .p-toast-message-content {
+                @apply items-center border-none bg-white rounded-md;
+
+                .p-toast-message-text {
+                    .p-toast-detail {
+                        @apply m-0;
+                    }
+                }
+
+                .p-toast-icon-close {
+                    @apply transition-none focus:shadow-none;
+                }
+            }
+
+            &.p-toast-message-info {
+                @apply border-info text-info;
+
+                .p-toast-message-icon, .p-toast-icon-close {
+                    @apply text-info;
+                }
+
+                .p-toast-icon-close {
+                    @apply hover:bg-blue-100;
+                }
+            }
+
+            &.p-toast-message-success {
+                @apply border-positive text-positive;
+
+                .p-toast-message-icon,
+                .p-toast-icon-close {
+                    @apply text-positive;
+                }
+
+                .p-toast-icon-close {
+                    @apply hover:bg-emerald-100;
+                }
+            }
+
+            &.p-toast-message-warn {
+                @apply border-warning text-warning;
+
+                .p-toast-message-icon, .p-toast-icon-close {
+                    @apply text-warning;
+                }
+
+                .p-toast-icon-close {
+                    @apply hover:bg-amber-100;
+                }
+            }
+
+            &.p-toast-message-error {
+                @apply border-negative text-negative;
+
+                .p-toast-message-icon, .p-toast-icon-close {
+                    @apply text-negative;
+                }
+
+                .p-toast-icon-close {
+                    @apply hover:bg-red-100;
+                }
+            }
+        }
+    }
+}

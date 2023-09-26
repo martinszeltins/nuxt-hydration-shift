@@ -1,0 +1,13 @@
+@important {
+    .p-togglebutton {
+        @apply border border-gray-300 bg-white px-3 py-2 font-medium text-primary shadow-sm 
+                    enabled:hover:bg-neutral-50 enabled:hover:border-gray-300 enabled:focus:ring-0
+                    enabled:active:hover:bg-neutral-100 enabled:focus:bg-white
+                    enabled:focus:hover:bg-neutral-50
+                    dark:bg-trout-900 dark:border-ground-700 dark:text-casper-400;
+
+        &.p-highlight {
+            @apply bg-secondary text-white;
+        }
+    }
+}

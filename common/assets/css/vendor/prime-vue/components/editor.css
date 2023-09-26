@@ -1,0 +1,73 @@
+@important {
+    .p-editor-container {
+        .p-editor-toolbar {
+            @apply bg-zinc-50 rounded-t-md;
+
+            &.ql-snow {
+                @apply border-gray-200;
+
+                .ql-stroke {
+                    @apply stroke-zinc-500;
+                }
+
+                .ql-fill {
+                    @apply fill-zinc-500;
+                }
+
+                .ql-picker {
+                    .ql-picker-label {
+                        @apply text-zinc-500;
+
+                        &:hover {
+                            @apply text-zinc-700;
+
+                            .ql-stroke {
+                                @apply stroke-zinc-700;
+                            }
+
+                            .ql-fill {
+                                @apply fill-zinc-700;
+                            }
+                        }
+                    }
+
+                    &.ql-expanded {
+                        .ql-picker-label {
+                            @apply text-zinc-700;
+
+                            .ql-stroke {
+                                @apply stroke-zinc-700;
+                            }
+
+                            .ql-fill {
+                                @apply fill-zinc-700;
+                            }
+                        }
+
+                        p {
+                            @apply py-1 rounded-md shadow-[0_0_#0000,_0_0_#0000,_0_10px_15px_-3px_rgba(0,0,0,0.1),_0_4px_6px_-2px_rgba(0,0,0,0.05)];
+                        }
+
+                        .ql-picker-options {
+                            .ql-picker-item {
+                                @apply text-zinc-700 hover:text-zinc-900;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .p-editor-content {
+            @apply rounded-b-md;
+
+            &.ql-snow {
+                @apply border-gray-200;
+            }
+
+            .ql-editor {
+                @apply text-zinc-700 rounded-b-md;
+            }
+        }
+    }
+}

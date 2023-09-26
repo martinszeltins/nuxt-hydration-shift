@@ -1,0 +1,9 @@
+@important {
+    .p-skeleton {
+        @apply bg-white/90 rounded-md after:bg-[linear-gradient(90deg,_#f7f7f700,_#f4f4f766,_#fff0)] dark:after:bg-[linear-gradient(90deg,_#5e597400,_#4f576266,_#fff0)] dark:bg-trout-900;
+    }
+
+    .p-skeleton-secondary {
+        @apply bg-neutral-100 after:bg-[linear-gradient(90deg,_#fff0,_#fff6,_#fff0)] dark:after:bg-[linear-gradient(90deg,_#5e597400,_#4f576266,_#fff0)] dark:bg-trout-900;
+    }
+}

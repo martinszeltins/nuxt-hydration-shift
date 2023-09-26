@@ -1,0 +1,31 @@
+@important {
+    .p-dialog-mask {
+        --maskbg: rgb(0 0 0 / 2%);
+
+        @apply backdrop-blur-[1px];
+    }
+
+    .p-dialog {
+        @apply rounded-md shadow-[0_20px_25px_-5px_rgba(0,_0,_0,_0.1),0_10px_10px_-5px_rgba(0,0,0,0.04)] dark:border dark:border-solid dark:border-ground-700;
+
+        .p-dialog-header {
+            @apply text-zinc-700 rounded-tr-md rounded-tl-md dark:bg-gunmetal-900 dark:text-casper-400 py-5 font-semibold;
+
+            .p-dialog-title {
+                @apply text-2xl;
+            }
+
+            .p-dialog-header-icon {
+                @apply text-zinc-500 transition-none focus:shadow-none dark:enabled:hover:bg-gray-700 dark:enabled:hover:text-gray-400;
+            }
+        }
+
+        .p-dialog-content {
+            @apply text-zinc-700 p-6 pt-0 dark:text-casper-400 dark:bg-iron-900;
+
+            &:last-of-type {
+                @apply rounded-bl-md rounded-br-md;
+            }
+        }
+    }
+}

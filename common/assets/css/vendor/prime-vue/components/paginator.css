@@ -1,0 +1,73 @@
+@important {
+    .p-paginator {
+        @apply text-zinc-500 border-zinc-100 py-3 px-6 rounded-md dark:bg-gunmetal-900 dark:text-casper-400 dark:border-ground-600;
+
+        .p-paginator-first,
+        .p-paginator-prev,
+        .p-paginator-next,
+        .p-paginator-last {
+            @apply border border-solid border-zinc-300 text-zinc-500 min-w-[3rem] h-12 m-0 ml-[-1px] transition-none rounded-none dark:border-ground-600 dark:text-casper-400;
+        }
+
+        .p-paginator-first:not(.p-disabled):not(.p-highlight):hover,
+        .p-paginator-prev:not(.p-disabled):not(.p-highlight):hover,
+        .p-paginator-next:not(.p-disabled):not(.p-highlight):hover,
+        .p-paginator-last:not(.p-disabled):not(.p-highlight):hover {
+            @apply dark:bg-gunmetal-800;
+        }
+
+        .p-paginator-first {
+            @apply rounded-tl-md rounded-bl-md;
+        }
+
+        .p-paginator-last {
+            @apply rounded-tr-md rounded-br-md;
+        }
+
+        .p-dropdown {
+            @apply h-12;
+        }
+
+        .p-paginator-page-input {
+            .p-inputtext {
+                @apply max-w-[3rem];
+            }
+        }
+
+        .p-paginator-current {
+            @apply border border-solid border-zinc-300 text-zinc-500 min-w-[3rem] h-12 m-0 ml-[-1px] dark:border-ground-600;
+        }
+
+        .p-link {
+            @apply dark:focus:shadow-none;
+        }
+
+        .p-paginator-pages {
+            .p-paginator-page {
+                @apply border border-solid border-zinc-300 text-zinc-500 min-w-[3rem] h-12 m-0 ml-[-1px] transition-none rounded-none dark:border-ground-600;
+
+                &:not(.p-highlight) {
+                    @apply dark:hover:bg-gunmetal-800;
+                }
+
+                &.p-highlight {
+                    @apply font-bold border-secondary bg-secondary-50 text-secondary z-10 dark:border-ground-500 dark:bg-gunmetal-800 dark:text-casper-400;
+                }
+
+                &.p-link{
+                    @apply focus:shadow-secondary dark:focus:shadow-none;
+                }
+            }
+        }
+    }
+
+    .p-paginator-640px {
+        .p-paginator-prev {
+            @apply rounded-tl-md rounded-bl-md focus:shadow-none focus:outline-none;
+        }
+
+        .p-paginator-next {
+            @apply rounded-tr-md rounded-br-md focus:shadow-none focus:outline-none;
+        }
+    }
+}
